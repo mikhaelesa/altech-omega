@@ -55,7 +55,7 @@ To get started with this monorepo, follow these steps:
 1. **Clone the Repository:**
 
 ```bash
-$ git clone <repository-url>
+$ git clone https://github.com/mikhaelesa/altech-omega.git
 $ cd altech-omega
 ```
 
