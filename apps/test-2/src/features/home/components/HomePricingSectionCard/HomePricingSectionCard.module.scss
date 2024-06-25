@@ -1,0 +1,57 @@
+@use "@/styles/abstracts/variables" as v;
+
+._CardPlan {
+  background-color: white;
+  position: relative;
+  border: 1px solid v.$primary;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &._FeaturesOpened {
+    border-radius: 8px 8px 0 0;
+  }
+  &._IsPopular {
+    border-width: 3px;
+  }
+  ._PopularBadge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: v.$primary;
+    padding: 8px;
+    border-radius: 0 5px 0 8px;
+    color: white;
+  }
+  ._Header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    ._Copywriting {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 110px;
+    }
+    ._Price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+._Features {
+  border: 1px solid v.$primary;
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  padding: 12px;
+  background-color: white;
+  &._IsPopular {
+    border-width: 3px;
+  }
+  ul {
+    padding-left: 24px;
+  }
+}

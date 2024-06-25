@@ -1,0 +1,26 @@
+@use "sass:map";
+
+/**
+* Breakpoints
+*/
+$mobile-down: 767px;
+$mobile-up: 767px;
+$tablet-down: 1024px;
+$tablet-up: 1025px;
+$laptop-down: 1440px;
+$laptop-up: 1441px;
+
+/**
+* Colors
+*/
+$colors: (
+  "primary": #1679ab,
+  "secondary": #102c57,
+  "accent-1": #ffb1b1,
+  "accent-2": #ffcbcb,
+);
+
+$primary: map.get($colors, "primary");
+$secondary: map.get($colors, "secondary");
+$accent-1: map.get($colors, "accent-1");
+$accent-2: map.get($colors, "accent-2");

@@ -1,0 +1,38 @@
+@use "@/styles/abstracts/variables.scss" as v;
+
+._Wrapper {
+  padding: 6px 8px;
+  min-width: 140px;
+  border-radius: 8px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid v.$primary;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+  &:hover {
+    background-color: v.$primary;
+    > * {
+      color: white;
+    }
+  }
+  > * {
+    color: v.$primary;
+  }
+  &._Text {
+    border: none;
+    background-color: transparent;
+    transition: 0.3s;
+    &:hover {
+      > * {
+        font-weight: 700;
+        color: v.$primary;
+      }
+    }
+  }
+}
+
+._Link {
+  display: flex;
+  text-decoration: none;
+}

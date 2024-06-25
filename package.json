@@ -2,11 +2,15 @@
   "name": "altech-omega",
   "scripts": {
     "test:test-1": "jest --selectProjects=test-1 --watchAll",
-    "build:test-1": "npm -w apps/test-1 run build"
+    "build:test-1": "npm -w apps/test-1 run build",
+    "dev:test-2": "npm -w apps/test-2 run dev",
+    "build:test-2": "npm -w apps/test-2 run build",
+    "start:test-2": "npm -w apps/test-2 run start"
   },
   "type": "module",
   "workspaces": [
-    "apps/*"
+    "apps/test-1",
+    "apps/test-2"
   ],
   "devDependencies": {
     "@jupri-lab/eslint-config-typescript": "0.1.2",

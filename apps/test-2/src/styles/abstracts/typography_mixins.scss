@@ -1,0 +1,124 @@
+@use "variables" as v;
+
+@mixin heading-1 {
+  font-family: var(--plusJakartaSans);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.25em;
+  @media (max-width: v.$tablet-down) {
+    font-size: 40px;
+  }
+  @media (max-width: v.$mobile-down) {
+    font-size: 32px;
+  }
+}
+
+@mixin heading-2 {
+  font-family: var(--plusJakartaSans);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.25em;
+  @media (max-width: v.$tablet-down) {
+    font-size: 32px;
+  }
+  @media (max-width: v.$mobile-down) {
+    font-size: 28px;
+  }
+}
+
+@mixin heading-3 {
+  font-family: var(--plusJakartaSans);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.25em;
+  @media (max-width: v.$tablet-down) {
+    font-size: 26px;
+  }
+  @media (max-width: v.$mobile-down) {
+    font-size: 22px;
+  }
+}
+
+@mixin heading-4 {
+  font-family: var(--plusJakartaSans);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25em;
+  @media (max-width: v.$tablet-down) {
+    font-size: 20px;
+  }
+  @media (max-width: v.$mobile-down) {
+    font-size: 16px;
+  }
+}
+
+@mixin heading-5 {
+  font-family: var(--plusJakartaSans);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.25em;
+  letter-spacing: -0.02em;
+}
+
+@mixin body-xl {
+  font-family: var(--plusJakartaSans);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.25em;
+  @media (max-width: v.$tablet-down) {
+    font-size: 18px;
+  }
+  @media (max-width: v.$mobile-down) {
+    font-size: 16px;
+  }
+}
+
+@mixin body-lg {
+  font-family: var(--plusJakartaSans);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5em;
+  @media (max-width: v.$tablet-down) {
+    font-size: 16px;
+  }
+  @media (max-width: v.$mobile-down) {
+    font-size: 14px;
+  }
+}
+
+@mixin body-md {
+  font-family: var(--plusJakartaSans);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
+  @media (max-width: v.$tablet-down) {
+    font-size: 14px;
+  }
+  @media (max-width: v.$mobile-down) {
+    font-size: 13px;
+  }
+}
+
+@mixin body-sm {
+  font-family: var(--plusJakartaSans);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+@mixin body-xs {
+  font-family: var(--plusJakartaSans);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5em;
+}

@@ -1,0 +1,11 @@
+._Wrapper {
+  padding-block: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  ._CTA {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

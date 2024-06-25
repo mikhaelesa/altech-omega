@@ -1,0 +1,25 @@
+@use "@/styles/abstracts/variables.scss" as v;
+
+._Wrapper {
+  padding-block: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  ._Header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  ._CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    @media (max-width: v.$mobile-down) {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 300px;
+      margin-inline: auto;
+    }
+  }
+}

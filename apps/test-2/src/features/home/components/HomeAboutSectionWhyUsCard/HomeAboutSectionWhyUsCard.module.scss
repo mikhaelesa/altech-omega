@@ -1,0 +1,11 @@
+@use "@/styles/abstracts/variables" as v;
+
+._Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: white;
+  border: 2px solid v.$primary;
+  border-radius: 6px;
+  padding: 8px;
+}

@@ -1,0 +1,44 @@
+@use "@/styles/abstracts/variables.scss" as v;
+@use "@/styles/abstracts/typography_mixins.scss" as t;
+
+.h1,
+h1 {
+  @include t.heading-1;
+}
+
+.h2,
+h2 {
+  @include t.heading-2;
+}
+
+.h3,
+h3 {
+  @include t.heading-3;
+}
+
+.h4,
+h4 {
+  @include t.heading-4;
+}
+
+.h5,
+h5 {
+  @include t.heading-5;
+}
+
+.body-xl {
+  @include t.body-xl;
+}
+
+.body-md,
+p {
+  @include t.body-md;
+}
+
+.body-sm {
+  @include t.body-sm;
+}
+
+.body-xs {
+  @include t.body-xs;
+}

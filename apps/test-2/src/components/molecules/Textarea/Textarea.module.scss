@@ -1,0 +1,18 @@
+@use "@/styles/abstracts/variables.scss" as v;
+
+._Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  ._Textarea {
+    resize: vertical;
+    outline: none;
+    border: 2px solid v.$secondary;
+    border-radius: 4px;
+    padding: 8px 4px;
+    &:focus,
+    &:not(:placeholder-shown) {
+      border-color: v.$primary;
+    }
+  }
+}

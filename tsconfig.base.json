@@ -13,8 +13,7 @@
     "noUnusedParameters": true,
     "noImplicitAny": true,
     "isolatedModules": true,
-    "skipLibCheck": true,
-    "baseUrl": "."
+    "skipLibCheck": true
   },
   "include": ["apps/**/*"]
 }

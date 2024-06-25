@@ -1,112 +1,69 @@
-# Altech Omega React JS Technical Test
+# Altech Omega Technical Test
 
-This monorepo contains the solutions for the two tasks assigned for the technical test. Each task is implemented as a separate app within the repository.
+This repository contains two tasks structured within a monorepo. The tasks are located in the `apps/test-1` and `apps/test-2` directories. Each task is designed to test different technical skills.
 
-## Table of Contents
+## Installation
 
-- [Project Structure](#project-structure)
-- [Setup Instructions](#setup-instructions)
-- [Task 1: Fishbash, Sort, and isPalindrome](#task-1-fishbash-sort-and-isPalindrome)
-  - [Description](#description)
-  - [Usage](#usage)
-  - [Tests](#tests)
-- [Task 2: Slicing](#task-2-slicing)
-  - [Description](#description)
-  - [Usage](#usage)
-  - [Tests](#tests)
+Before running the tasks, you need to install the dependencies. From the root directory, run:
 
-## Project Structure
-
-```
-altech-omega/
-├── apps/
-│ ├── test-1/
-│ │ ├── src/
-│ │ │ ├── fishBash.ts
-│ │ │ ├── sort.ts
-│ │ │ └── palindrome.ts
-│ │ ├── __tests__/
-│ │ │ ├── fishBash.spec.ts
-│ │ │ ├── sort.spec.ts
-│ │ │ └── isPalindrome.spec.ts
-│ │ ├── jest.config.ts
-│ │ ├── package.json
-│ │ └── README.md
-│ ├── test-2/
-│ │ ├── src/
-│ │ │ └── slicing.js
-│ │ ├── tests/
-│ │ │ └── slicing.test.js
-│ │ ├── package.json
-│ │ └── README.md
-├── .eslintignore
-├── .eslintrc.json
-├── jest.config.ts
-├── package-lock.json
-├── package.json
-├── tsconfig.base.json
-└── README.md
+```sh
+npm install
 ```
 
-## Setup Instructions
+This will install all the required dependencies for both tasks.
 
-To get started with this monorepo, follow these steps:
+## Task 1: Algorithm Challenges
 
-1. **Clone the Repository:**
+The first task involves creating algorithms for three specific problems:
 
-```bash
-$ git clone https://github.com/mikhaelesa/altech-omega.git
-$ cd altech-omega
-```
+1. **Fish, Bash, Fish Bash**: Print "fish" if a number is divisible by 3, "bash" if divisible by 5, and "fish bash" if divisible by 15.
+2. **Sort**: Implement functions to sort an array of numbers in both ascending and descending order.
+3. **Palindrome**: Create a function that returns `true` if a given string is a palindrome, and `false` otherwise.
 
-2. **Install Dependencies:**
+### Implementation
 
-Install the root dependencies and the dependencies for each package:
+- The solutions are written in TypeScript.
+- Jest is used for testing.
 
-```
-$ npm install
-# or
-$ yarn
-# or
-$ pnpm install
-```
+### Running Task 1
 
-## Task 1: Fishbash, Sort, and Palindrome
+To run the tests for Task 1, use the following command from the root directory:
 
-### Description
-
-This task involves three different functionalities:
-
-1. `fishBash`: Logs "fish", "bash", or "fish bash" depending on divisibility.
-2. `sort`: Sorts an array of numbers in ascending and descending order.
-3. `isPalindrome`: Checks if a given string is a palindrome.
-
-To use these functions:
-
-1. **Build the Project**:
-
-```bash
-$ npm run build:test-1
-```
-
-2. **Use the Functions**
-
-```js
-import { fishBash } from "./apps/test-1/dist/fishBash.js";
-import { sortAsc, sortDesc } from "./apps/test-1/dist/sort.js";
-import { isPalindrome } from "./apps/test-1/dist/isPalindrome.js";
-
-// Example usage
-fishBash(15); // Outputs: "1", "2", "fish", "4", "bash", "fish", "7", "8", "fish", "bash", "11", "fish", "13", "14", "fish bash"
-console.log(sortAsc([5, 3, 1, 4, 2])); // Output: [1, 2, 3, 4, 5]
-console.log(sortDesc([5, 3, 1, 4, 2])); // Output: [1, 2, 3, 4, 5]
-console.log(isPalindrome("A man, a plan, a canal, Panama")); // Output: true
-```
-
-### Tests
-
-To run the tests for Task 1:
-
-```bash
+```sh
 $ npm run test:test-1
 ```
+
+To build the project, use:
+
+```sh
+npm run build:test-1
+```
+
+After building the project, you can create an index.js file in the root directory and import the functions from the build output folder (dist).
+
+## Task 2: Company Profile Slicing
+
+The second task involves creating a company profile webpage with four sections: Hero, About, Pricing, and Contact. The page is designed to showcase an ERP product.
+
+### Implementation
+
+- **Next.js**: Used for its easy routing setup and optimization features.
+- **SCSS**: Used for styling due to its powerful features and reusability.
+- **clsx**: A utility library for parsing classNames.
+
+### Running Task 2
+
+To run the project in development mode, use:
+
+```sh
+npm run dev:test-2
+```
+
+To build and run the project in production mode (recommended), use:
+
+```sh
+npm run build:test-2
+npm run start:test-2
+```
+
+After starting the project, open localhost:3000 in your browser. If port 3000 is occupied, the project might run on another port or the process might be aborted.
